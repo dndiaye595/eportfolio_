@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - Dialal NDIAYE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <div id="page">
+      <header id="header">
+        <img src="images/banniere.jpg" alt="Bandeau">
+        <nav>
+            <ul>
+                <li><a href="#accueil" onclick="hideHeader()">Accueil</a></li>
+                <li><a href="#parcours" onclick="hideHeader()">Mon Parcours</a></li>
+                <li><a href="#competences" onclick="hideHeader()">Mes Compétences</a></li>
+                <li><a href="#projets" onclick="hideHeader()">Projets Scolaires</a></li>
+                <li><a href="#experience" onclick="hideHeader()">Projets Professionnels</a></li>
+                <li><a href="#contact" onclick="hideHeader()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<!-- Section Accueil -->
+	<section id="accueil">
+		<h1>Bienvenue sur mon E-Portfolio</h1>
+		<div class="accueil-content">
+			<p>Je suis Dialal NDIAYE, étudiante en deuxième année de BUT Sciences des Données, spécialisée en Exploration et Modélisation Statistique.                
+			À travers cet e-portfolio, découvrez mon parcours, mes projets et mes compétences en data science.</p>
+			<a href="CV_DN.pdf" class="cta-button">Télécharger mon CV</a>
+		</div>
+		<div class="bienvenue-image">
+			<img src="images/bienvenue.jpg" alt="bienvenue">
+		</div>
+	</section>
+
+	<!-- Section Parcours -->
+	<section id="parcours">
+			<h1>Mon Parcours</h1>
+		<div class="parcours_img">
+			<img src="images/Parcours.png" alt="Mon Parcours" class="parcours-image">
+		</div>
+	</section>
+
+    <!-- Section Compétences -->
+<section id="competences">
+    <h1>Mes Compétences</h1>
+    <div class="competences-list">
+        <div class="competence">
+            <img src="images/python.jpg" alt="Python Icon">
+            <h3>Python</h3>
+            <p>70% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/sql.png" alt="SQL Icon">
+            <h3>SQL</h3>
+            <p>95% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/sas.jpg" alt="SAS Icon">
+            <h3>SAS</h3>
+            <p>50% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/html.jpg" alt="HTML Icon">
+            <h3>HTML</h3>
+            <p>75% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/css.jpg" alt="CSS Icon">
+            <h3>CSS</h3>
+            <p>75% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/powerbi.jpg" alt="Power BI Icon">
+            <h3>Power BI</h3>
+            <p>85% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/excel.jpg" alt="Excel Icon">
+            <h3>Excel</h3>
+            <p>100% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/access.jpg" alt="Access Icon">
+            <h3>Access</h3>
+            <p>65% (Niveau de maîtrise)</p>
+        </div>
+        <div class="competence">
+            <img src="images/java.jpg" alt="JavaScript Icon">
+            <h3>JavaScript</h3>
+            <p>80% (Niveau de maîtrise)</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Projets Scolaires -->
+    <section id="projets">
+        <h1>Mes Projets Scolaires</h1>
+        <div class="projets-container">
+            <div class="projet">
+                <img src="images/dataviz.jpg" alt="Dataviz Project Image" class="project-image">
+                <h3>Projet Dataviz</h3>
+                <p>Lors du concours DataViz, j’ai travaillé en groupe pour produire une visualisation de données répondant à une problématique fournie par une entreprise.
+   				   En une journée, nous avons analysé les données, conçu une représentation visuelle pertinente et rédigé un résumé explicatif avec Excel et Power BI.</p>
+				<a href="trame_dataviz.pdf" class="cta-button">Voir plus</a>
+            </div>
+
+            <div class="projet">
+                <img src="images/projet_fichier.jpg" alt="Fichier Project Image" class="project-image">
+                <h3>Projet Écriture et Lecture de Fichier</h3>
+                <p>J’ai développé un programme en Python pour transformer un fichier de données non structuré en un fichier CSV exploitable sous Excel. 
+				   Le programme extrait et formate les informations, en respectant des contraintes d’encodage et de structure. 
+				   Ce projet m’a permis d’améliorer mes compétences en manipulation de fichiers et en automatisation des traitements de données.</p>
+            </div>
+
+            <div class="projet">
+                <img src="images/enquete.jpg" alt="Enquête Project Image" class="project-image">
+                <h3>Projet Enquête</h3>
+                <p>J’ai participé à une enquête sur l’utilisation de l’IA dans l’enseignement. 
+				   J’ai contribué à la définition de la problématique, à la rédaction du questionnaire et à sa saisie sur LimeSurvey. 
+				   Après la diffusion auprès des étudiants et enseignants, j’ai analysé les données collectées et synthétisé les résultats. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets Professionnels -->
+    <section id="experience">
+        <h1>Projets Professionnels</h1>
+        <div class="experiences-container">
+            <div class="experience">
+                <img src="images/dataviz.jpg" alt="Dataviz Project Image" class="project-image">
+                <h3>Migration de Dashboard</h3>
+                <p>J’ai participé à la migration de dashboards initialement basés sur des Data Modules vers un framework unifié, afin d’établir une source de données unique pour tous les rapports. Cette migration a permis d’améliorer la cohérence et la performance des analyses. 
+				   J’ai utilisé SQL et SCI (outil de reporting basé sur IBM Cognos) pour assurer la transition et optimiser l’accès aux données.</p>
+            </div>
+            <div class="experience">
+                <img src="images/enquete.jpg" alt="Enquête Project Image" class="project-image">
+                <h3>Automatisation avec Python</h3>
+                <p>J’ai développé un script Python permettant d’identifier automatiquement les modifications apportées à un fichier Excel. 
+				   Auparavant, les collaborateurs recevaient un fichier modifié par leur responsable sans indication des changements effectués.
+				   Mon script compare les versions, détecte les lignes modifiées et génère un fichier Excel final listant les différences (numéro de ligne et contenu modifié), optimisant ainsi le suivi des corrections et réduisant le temps d’analyse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h1>Me Contacter</h1>
+        <form action="mailto:contact@monportfolio.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dialal NDIAYE - All Rights Reserved</p>
+    </footer>
+
+<button id="backToTop">
+    <img src="images/menu.jpg" alt="Menu" id="menuIcon">
+</button>
+
+</body>
+
+<script>
+// JavaScript pour masquer le bandeau au clic
+function hideHeader() {
+    document.getElementById("header").style.display = "none";
+}
+
+// Optionnel : pour réafficher le bandeau lorsque l'on revient en haut
+window.onscroll = function() {
+    if (window.scrollY === 0) {
+        document.getElementById("header").style.display = "block";
+    }
+};
+</script>
+
+<script>
+    window.onscroll = function() {
+        let btn = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    document.getElementById("backToTop").onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+</html>

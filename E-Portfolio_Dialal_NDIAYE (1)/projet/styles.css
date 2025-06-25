@@ -1,0 +1,338 @@
+/* Styles CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white
+    color: #333;
+}
+
+header {
+    background-color: #004c8c; /* Bleu */
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+	padding:20;
+}
+
+header img {
+    width: 100%; /* Largeur de l'image réduite à 80% */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrer l'image */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#page {
+    width: 100%;
+	background-color:white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Section Accueil */
+#accueil {
+    padding: 40px;
+	min-height: 100vh;
+    background-color: white;
+    margin-top: 120px; /* Ajuste la marge pour commencer après le bandeau */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.bienvenue-image {
+    width: 100%; /* Prend toute la largeur */
+	margin-top: 120px;
+	transform: scale(1.1);
+	padding:40px;
+}
+
+
+#accueil h1 {
+    font-size: 2.5em;
+    color: #808080; /* Gris pour le texte "Bienvenue" */
+    text-align: center;
+	margin-top: 120px;
+}
+
+#accueil p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Titres uniformes */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #004c8c; /* Bleu */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+.cta-button {
+    display: inline-block;
+    background-color: #004c8c;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #00376b;
+}
+
+/* Section Parcours */
+#parcours {
+    padding: 40px;
+	min-height: 100vh;
+	background-color: white;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.parcours_img {
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    min-height: 80vh;
+	margin-top: :2px;
+	transform: scale(1.2);
+}
+
+/* Section Compétences */
+#competences {
+    padding: 40px;
+	min-height: 100vh;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#competences h1 {
+    font-size: 2.5em;
+    color: #004c8c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.competences-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.competence {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.competence img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.competence h3 {
+    font-size: 1.5em;
+    color: #004c8c;
+}
+
+.competence p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Section Projets Scolaires */
+#projets {
+    padding: 40px;
+    background-color: white;
+    margin-top: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: justify;
+	
+}
+
+.projets-container {
+    display: flex;
+    justify-content: space-between; /* Répartition égale des projets */
+    flex-wrap: wrap; /* Les projets se réarrangeront si l'espace est trop petit */
+    gap: 10px; /* Espacement entre les projets */
+}
+
+.projet {
+    width: 32%; /* Chaque projet prend 32% de la largeur de la section */
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Ajoute de l'espace entre les lignes de projets */
+}
+
+.projet:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; /* Hauteur uniforme pour les images */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #004c8c;
+}
+
+.project p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Affichage des projets professionnels avec illustrations */
+.experiences-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#experience {
+	min-height: 100vh;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.experience {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+	margin-top:120px;
+    text-align: justify;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.experience:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experience img {
+    width: 100%; 
+    height: 200px; /* Ajustement pour une taille uniforme */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.experience h3 {
+    font-size: 1.8em;
+    color: #004c8c;
+	text-align: justify;
+}
+
+.experience p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Formulaire de contact */
+#contact{
+	min-height: 100vh;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	margin-top:120px;
+
+}
+#contact input,
+#contact textarea {
+    font-size: 1.4em; /* Agrandit la police */
+    padding: 10px; /* Ajoute de l'espace pour un meilleur confort visuel */
+}
+form input, form textarea {
+    width: 100%;
+    padding: 1px;
+    margin: 10px 0;
+	margin-top:120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+	background-color: #55555;
+}
+
+form button {
+    background-color: #004c8c;
+    color: white;
+    padding: 12 px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	font-size: 1.4em;
+}
+
+form button:hover {
+    background-color: #00376b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: Bleu;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent; /* Supprime l'arrière-plan */
+    border: none;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+}
+
+#menuIcon {
+    width: 50px;  /* Ajuste la taille du logo */
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+#backToTop:hover #menuIcon {
+    transform: scale(1.1); /* Effet zoom au survol */
+}
